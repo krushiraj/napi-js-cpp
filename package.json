@@ -1,0 +1,17 @@
+{
+  "main": "lib/binding.js",
+  "dependencies": {
+    "node-addon-api": "^1.1.0",
+    "node-gyp": "^9.0.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/node-gyp build",
+    "test": "node --napi-modules ./test/test_binding.js"
+  },
+  "gypfile": true,
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Language Binding demonstration",
+  "author": "Krushi Raj Tula",
+  "license": "ISC"
+}
